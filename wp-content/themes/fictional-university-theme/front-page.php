@@ -1,75 +1,9 @@
-<?php get_header(); 
-
-// Problem 1
-// $array = array(1 => 0, 2, 7 => 3, 4);
-// $array2 = array_merge(array('a'), array_slice($array, 2));
-// array_splice($array, 3, count($array), $array2);
-// print_r($array);
-
-// Problem 6
-// class MyClass1{
-//   function __construct(){
-//     echo "This is my Class 1";
-//   }
-// }
-
-// class MyClass2{}
-
-// class MyClass extends MyClass1{
-//   function __construct(){
-//     echo "This is my Class 1";
-//   }
-// }
-
-// Question 14
-
-// $a1 = array(0 => 'a0', 1 => 'a1', 2 => 'a2');
-// $a2 = array(2 => 'b2', 3 => 'b3', 4 => 'b4');
-
-// print_r($a1 + $a2);
-
-
-// Question 16
-// class A{
-//   function foo(){
-//     echo __CLASS__;
-//   }
-// }
-
-// trait B {
-//   function foo(){
-//     echo "B";
-//   }
-// }
-
-// trait C{
-//   use B;
-//   function FOO(){
-//     echo "C";
-//   }
-// }
-
-// class D extends A{
-//   use C;
-// }
-
-// $d = new D();
-// $d-> foo();
-
-// $array = array('' => 3, true => 2, false => 3, 0 => 4, Null => 999);
-
-// $array2 = array_merge(array(10, 20, 30), array_slice($array, next($array2)));
-
-// array_splice($array, 0, key($array2), $array2);
-// print_r($array);
-
-
-// ?>
+<?php get_header(); ?>
 
 <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>)"></div>
       <div class="page-banner__content container t-center c-white">
-        <h1 class="headline headline--large">Welcome!</h1>
+        <h1 class="headline headline--large">Hello World!</h1>
         <h2 class="headline headline--medium">We think you&rsquo;ll like it here.</h2>
         <h3 class="headline headline--small">Why don&rsquo;t you check out the <strong>major</strong> you&rsquo;re interested in?</h3>
         <a href="<?php echo site_url('/programs') ?>" class="btn btn--large btn--blue">Find Your Major</a>

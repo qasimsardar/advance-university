@@ -11,7 +11,6 @@
  * * Database settings
  * * Secret keys
  * * Database table prefix
- * * Localized language
  * * ABSPATH
  *
  * @link https://wordpress.org/support/article/editing-wp-config-php/
@@ -19,7 +18,10 @@
  * @package WordPress
  */
 
- if (strstr($_SERVER['SERVER_NAME'], 'advance-university.local')){
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+
+if (strstr($_SERVER['SERVER_NAME'], 'advance-university.local')){
 
 	define( 'DB_NAME', 'local' );
 	define( 'DB_USER', 'root' );
@@ -27,14 +29,18 @@
 	define( 'DB_HOST', 'localhost' );
 
  } else{
-	define( 'DB_NAME', ' dbz97khxkvgris' );
+	define( 'DB_NAME', 'dbz97khxkvgris' );
+
+	/** Database username */
 	define( 'DB_USER', 'ujwdrtz4iuh5s' );
-	define( 'DB_PASSWORD', '2m5f[@4fgy@5' );
+
+	/** Database password */
+	define( 'DB_PASSWORD', '9D12^;vxiTb7' );
+
+	/** Database hostname */
 	define( 'DB_HOST', 'localhost' );
 
  }
-
-// ** Database settings - You can get this info from your web host ** //
 
 
 
@@ -55,7 +61,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -80,7 +93,6 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-
 
 /* Add any custom values between this line and the "stop editing" line. */
 
