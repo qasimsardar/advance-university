@@ -19,7 +19,7 @@ Bleeding edge starter theme.
 - [x] Modern JavaScript support
   - [x] Built with Webpack 3
   - [x] **CSS Hot Module Replacement** (HMR)
-  - [x] **JS Hot Module Replacement** (HMR) 
+  - [x] **JS Hot Module Replacement** (HMR)
   - [x] ES2017+ (stage-2)
   - [x] ESLint
   - [x] Sourcemaps
